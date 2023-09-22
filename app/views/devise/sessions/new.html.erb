@@ -1,4 +1,4 @@
-<%= render partial: '/shared/header', locals: { page_name: 'LOG IN'} %>
+<%= render partial: '/shared/header', locals: { page_name: 'LOG IN', back_link_path: ''} %>
 
 <div class="w-full pt-3 h-full relative">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -21,6 +21,7 @@
       <%= f.submit "Log in", class: 'border border-white h-full w-full text-white' %>
     </div>
   <% end %>
-
-  <%= render "devise/shared/links" %>
+  <div class="w-full flex  items-center flex-col justify-center text-center"> 
+    <%= render "devise/shared/links" %>
+  </div>
 </div>

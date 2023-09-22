@@ -1,19 +1,23 @@
-<h1>Categories page</h1>
+<%= render partial: '/shared/header', locals: { page_name: 'CATEGORIES', back_link_path: ''} %>
+
 <% @categories.each do |category| %>
-    <div class="category-container">
-        <div class="category-image-container">
-            <img src=<%= category.icon %> alt=<%= category.name %>>
+    <a class="m-3 bg-white p-2 grid grid-cols-90-full h-[90px]" href="<%= category_expenses_path(category.id) %>">
+            <img src=<%= category.icon %> class="bg-[#f3f3f3] w-[90px] h-[76px] overflow-hidden" />
+        <div class="p-2">
+            <div class="flex w-full justify-between">
+                <h2 class="text-color-text"><%= category.name %></h2>
+                <% total_amount = 0
+                    category.expenses.each do |expense|
+                        total_amount += expense.amount
+                    end
+                %>
+                <h2  class="font-bold text-lg"> <%= total_amount %> $ </h2>
+            </div>
+            <small class="font-thin"><%= category.created_at %></small>
         </div>
-        <div class="category-details">
-            <%= link_to category.name , category_expenses_path(category.id) %>
-        </div>
-        <% total_amount = 0
-            category.expenses.each do |expense|
-                total_amount += expense.amount
-            end
-        %>
-        <h2> total <%= total_amount %></h2>
-    </div>
+    </a>
 <% end %>
 
-<%= link_to 'ADD CATEGORY', new_category_path %>
+<div class="link-highlight-container">
+    <%= link_to 'ADD CATEGORY', new_category_path, class: 'link-highlight' %>
+</div>
