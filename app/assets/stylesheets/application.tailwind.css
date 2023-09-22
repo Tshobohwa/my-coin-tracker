@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer components {
   .text-input {
-    @apply w-[100vw] h-[60px] bg-white border-[#d3d3d3]
+    @apply w-full h-[60px] bg-white border-[#d3d3d3]
+  }
+
+  .link-highlight-container {
+    @apply fixed bottom-0 w-full h-[80px] bg-color-button flex items-center justify-center p-2 md:w-[540px]
+  }
+
+  .link-highlight {
+    @apply border border-white h-full w-full text-white flex items-center justify-center
   }
 }
-
-
 
 .logo {
   font-family: 'Kalam', cursive;
