@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: my_cointracker_production
-  username: postgres
-  password: 243243
+  url: <%= ENV['DATABASE_URL'] %>
