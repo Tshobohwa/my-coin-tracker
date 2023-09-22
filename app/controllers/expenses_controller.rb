@@ -8,6 +8,7 @@ class ExpensesController < ApplicationController
     @expense = Expense.new
     @group = Category.new
     @categories = current_user.categories.all
+    @category_id = params[:category_id]
   end
 
   def create
