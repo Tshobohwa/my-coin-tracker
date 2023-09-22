@@ -1,0 +1,15 @@
+<%
+total_amount = 0
+@category.expenses.each do |expense|
+    total_amount += expense.amount
+end
+%>
+<h2>Total amount: <%= total_amount %></h2>
+<% @category.expenses.each do |expense| %>
+
+<h3><%= expense.name %></h3>
+<h4>
+    <%= expense.amount %>
+</h4>
+<% end %>
+<%= link_to 'ADD EXPENSE', new_category_expense_path(@category.id) %>
