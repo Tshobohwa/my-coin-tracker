@@ -18,6 +18,9 @@ module.exports = {
         "color-second": "#5fb523",
         "color-button": "#60b622",
       },
+      gridTemplateColumns: {
+        "90-full": "90px 1fr",
+      },
     },
   },
   plugins: [
