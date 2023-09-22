@@ -67,8 +67,8 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'rspec'
   gem 'capybara'
+  gem 'rspec'
   gem 'selenium-webdriver'
 end
 
@@ -81,4 +81,6 @@ gem 'devise'
 # cancancan authorization gem
 gem 'cancancan', '~> 1.9'
 
-gem "tailwindcss-rails", "~> 2.0"
+gem 'tailwindcss-rails', '~> 2.0'
+
+gem 'rails-controller-testing'
