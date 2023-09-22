@@ -11,9 +11,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-[#f3f3f3]">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+  <body class="bg-[#f3f3f3] h-[100vh]">
+    <div class=" md:w-[540px] m-auto">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %> 
+    </div>
   </body>
 </html>
