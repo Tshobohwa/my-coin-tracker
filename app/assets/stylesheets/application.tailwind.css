@@ -4,18 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .text-input {
-    @apply w-full h-[60px] bg-white border-[#d3d3d3];
-  }
+.text-input {
+  @apply w-full h-[60px] bg-white border-[#d3d3d3];
+}
 
-  .link-highlight-container {
-    @apply fixed bottom-0 w-full h-[80px] bg-color-button flex items-center justify-center p-2 md:w-[540px];
-  }
+.link-highlight-container {
+  @apply fixed bottom-0 w-full h-[80px] bg-color-button flex items-center justify-center p-2 md:w-[540px];
+}
 
-  .link-highlight {
-    @apply border border-white h-full w-full text-white flex items-center justify-center;
-  }
+.link-highlight {
+  @apply border border-white h-full w-full text-white flex items-center justify-center;
 }
 
 .logo {
