@@ -85,4 +85,7 @@ test:
 #
 production:
   <<: *default
+  database: mycointracker
+  username: mycointracker_user
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
   url: <%= ENV['DATABASE_URL'] %>
