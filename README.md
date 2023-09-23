@@ -13,6 +13,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Video Description ](#video-description)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -61,7 +62,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://thecointracker.onrender.com/)
+- [coin tracker](https://thecointracker.onrender.com/)
+
+## 🚀 Live Demo <a name="video-description"></a>
+
+- [Loom ](https://www.loom.com/share/3dd991c1c4e74357b2eb85378edbe3ea?sid=4560c0fe-97fd-4e9d-9e25-0f294b29a82a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
