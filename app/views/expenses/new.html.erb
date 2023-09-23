@@ -1,0 +1,11 @@
+<%= render partial: 'shared/header', locals: {page_name: 'NEW EXPENSE',  back_link_path: category_expenses_path(@category_id)} %>
+<%= form_with class: 'post-form', model: @expense, url: { action: "create" }, method: :post do |f| %>
+    <%= f.text_field :name, placeholder: 'name', class: 'text-input' %>
+    <%= f.number_field :amount, placeholder: 'amount', class: 'text-input' %>
+        <div class="form-group mb-3">
+          <%= select_tag "group", options_for_select(@categories.map { |group| [group.name, group.id] }), {prompt:"Select Category", required:true, class:"w-full h-[60px] border-[#d3d3d3]"}%>
+        </div>
+    <div class="link-highlight-container">
+        <%= f.submit 'ADD EXPENSE', class: 'link-highlight' %>
+    </div>
+<% end %>

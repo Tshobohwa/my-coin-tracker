@@ -1,0 +1,27 @@
+<%= render partial: '/shared/header', locals: { page_name: 'LOG IN', back_link_path: ''} %>
+
+<div class="w-full pt-3 h-[100vh] relative">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email", class: 'text-input' %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: "password", class: 'text-input' %>
+    </div>
+
+    <% if devise_mapping.rememberable? %>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end %>
+
+    <div class="sticky bottom-[80px] w-full h-[80px] bg-color-button flex items-center justify-center p-2">
+      <%= f.submit "Log in", class: 'border border-white h-full w-full text-white' %>
+    </div>
+  <% end %>
+  <div class="w-full flex  items-center flex-col justify-center text-center"> 
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

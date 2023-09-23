@@ -1,0 +1,8 @@
+<%= render partial: 'shared/header', locals: {page_name: 'NEW CATEGORY', back_link_path: ''} %>
+<%= form_with class: 'post-form', model: @category, url: { action: "create" }, method: :post do |f| %>
+    <%= f.text_field :name, placeholder: 'name', class: 'text-input' %>
+    <%= f.text_field :icon, placeholder: 'icon', class: 'text-input' %>
+    <div class="link-highlight-container">
+        <%= f.submit 'ADD CATEGORY', class: 'link-highlight' %>
+    </div>
+<% end %>
