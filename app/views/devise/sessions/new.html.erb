@@ -1,6 +1,6 @@
 <%= render partial: '/shared/header', locals: { page_name: 'LOG IN', back_link_path: ''} %>
 
-<div class="w-full pt-3 h-full relative">
+<div class="w-full pt-3 h-[100vh] relative">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email", class: 'text-input' %>
@@ -17,7 +17,7 @@
       </div>
     <% end %>
 
-    <div class="absolute bottom-[80px] w-full h-[80px] bg-color-button flex items-center justify-center p-2">
+    <div class="sticky bottom-[80px] w-full h-[80px] bg-color-button flex items-center justify-center p-2">
       <%= f.submit "Log in", class: 'border border-white h-full w-full text-white' %>
     </div>
   <% end %>
