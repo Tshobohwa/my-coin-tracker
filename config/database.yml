@@ -86,3 +86,5 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  port: localhost
+  port: 5332
