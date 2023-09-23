@@ -145,7 +145,8 @@ If you like this project, give it a star and share it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the opportunity to learn web development.
+- Credit goes to [Gregoire](https://www.behance.net/gregoirevella?log_shim_removal=1) Vella on Behance whose [original](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) design was used.
+- I would like to thank Microverse for the opportunity to learn web development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
