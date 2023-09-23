@@ -32,5 +32,4 @@
 
 # Ignore javascript node modules
 node_modules/
-/app/assets/builds/*
 !/app/assets/builds/.keep
