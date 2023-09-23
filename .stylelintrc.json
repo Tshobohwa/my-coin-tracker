@@ -4,7 +4,8 @@
     ],
     "plugins": [
         "stylelint-scss",
-        "stylelint-csstree-validator"
+        "stylelint-csstree-validator",
+        "tailwindcss"
     ],
     "rules": {
         "at-rule-no-unknown": [
